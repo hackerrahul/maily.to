@@ -1,5 +1,5 @@
 import { Suspense, useEffect, useMemo, useRef, useState } from 'react';
-import { Editor } from '@maily-to/core';
+import { Editor } from '@maily-to/react';
 import { cn } from '~/lib/classname';
 import defaultEmailJSON from '~/lib/default-editor-json.json';
 import {

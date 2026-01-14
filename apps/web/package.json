@@ -10,7 +10,7 @@
     "generate:meta": "tsx ./app/scripts/generate-metadata-files.ts"
   },
   "dependencies": {
-    "@maily-to/core": "workspace:*",
+    "@maily-to/react": "workspace:*",
     "@maily-to/render": "workspace:*",
     "@maily-to/shared": "workspace:*",
     "@radix-ui/react-dialog": "^1.1.6",

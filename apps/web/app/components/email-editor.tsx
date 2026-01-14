@@ -5,7 +5,7 @@ import { cn } from '~/lib/classname';
 import type { Database } from '~/types/database';
 
 const Editor = lazy(() =>
-  import('@maily-to/core').then((module) => ({
+  import('@maily-to/react').then((module) => ({
     default: module.Editor,
   }))
 );

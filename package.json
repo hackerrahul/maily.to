@@ -27,5 +27,9 @@
     "turbo": "latest",
     "vite": "^6.0.7",
     "vitest": "^3.0.2"
-  }
+  },
+  "workspaces": [
+    "apps/*",
+    "packages/*"
+  ]
 }

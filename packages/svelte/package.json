@@ -1,0 +1,109 @@
+{
+  "name": "@maily-to/svelte",
+  "type": "module",
+  "version": "0.1.0",
+  "description": "Powerful Svelte 5 editor for creating beautiful, pre-designed, mobile-ready emails.",
+  "private": false,
+  "main": "./dist/index.js",
+  "module": "./dist/index.js",
+  "types": "./dist/index.d.ts",
+  "svelte": "./dist/index.js",
+  "files": [
+    "dist/**"
+  ],
+  "exports": {
+    "./package.json": "./package.json",
+    ".": {
+      "types": "./dist/index.d.ts",
+      "svelte": "./dist/index.js",
+      "default": "./dist/index.js"
+    },
+    "./blocks": {
+      "types": "./dist/blocks/index.d.ts",
+      "svelte": "./dist/blocks/index.js",
+      "default": "./dist/blocks/index.js"
+    },
+    "./extensions": {
+      "types": "./dist/extensions/index.d.ts",
+      "default": "./dist/extensions/index.js"
+    },
+    "./style.css": "./dist/index.css"
+  },
+  "scripts": {
+    "dev": "svelte-package --watch",
+    "build": "svelte-package",
+    "clean": "rm -rf dist"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/arikchakma/maily.to.git",
+    "directory": "packages/svelte"
+  },
+  "author": "Arik Chakma <arikchakma@gmail.com>",
+  "keywords": [
+    "tiptap",
+    "wysiwyg",
+    "maily.to",
+    "editor",
+    "svelte",
+    "svelte5",
+    "email",
+    "bits-ui"
+  ],
+  "engines": {
+    "node": ">=18.0.0"
+  },
+  "dependencies": {
+    "bits-ui": "^1.0.0",
+    "@tiptap/core": "2.11.5",
+    "@tiptap/extension-bubble-menu": "2.11.5",
+    "@tiptap/extension-code-block-lowlight": "2.11.5",
+    "@tiptap/extension-color": "2.11.5",
+    "@tiptap/extension-document": "2.11.5",
+    "@tiptap/extension-dropcursor": "2.11.5",
+    "@tiptap/extension-focus": "2.11.5",
+    "@tiptap/extension-heading": "2.11.5",
+    "@tiptap/extension-horizontal-rule": "2.11.5",
+    "@tiptap/extension-image": "2.11.5",
+    "@tiptap/extension-link": "2.11.5",
+    "@tiptap/extension-list-item": "2.11.5",
+    "@tiptap/extension-mention": "2.11.5",
+    "@tiptap/extension-paragraph": "2.11.5",
+    "@tiptap/extension-placeholder": "2.11.5",
+    "@tiptap/extension-text-align": "2.11.5",
+    "@tiptap/extension-text-style": "2.11.5",
+    "@tiptap/extension-underline": "2.11.5",
+    "@tiptap/pm": "2.11.5",
+    "@tiptap/starter-kit": "2.11.5",
+    "@tiptap/suggestion": "2.11.5",
+    "clsx": "^2.1.1",
+    "fast-deep-equal": "^3.1.3",
+    "highlight.js": "^11.11.1",
+    "lowlight": "^3.3.0",
+    "lucide-svelte": "^0.468.0",
+    "tailwindcss": "^4.1.8",
+    "tippy.js": "^6.3.7",
+    "uuid": "^11.1.0",
+    "y-prosemirror": "^1.3.0"
+  },
+  "devDependencies": {
+    "@sveltejs/package": "^2.3.0",
+    "@sveltejs/vite-plugin-svelte": "^5.0.2",
+    "@tailwindcss/typography": "^0.5.16",
+    "postcss": "^8.5.3",
+    "svelte": "^5.16.0",
+    "svelte-check": "^4.0.0",
+    "tailwind-merge": "^3.3.0",
+    "tailwind-scrollbar": "^4.0.2",
+    "tsconfig": "workspace:*",
+    "tw-animate-css": "^1.3.6",
+    "typescript": "^5.8.2",
+    "vite": "^6.0.0"
+  },
+  "peerDependencies": {
+    "svelte": "^5.0.0"
+  },
+  "publishConfig": {
+    "access": "public"
+  }
+}

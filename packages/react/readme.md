@@ -1,4 +1,4 @@
-<h1 align="center"><img height="150" src="https://maily.to/brand/icon.svg" /><br> @maily-to/core</h1>
+<h1 align="center"><img height="150" src="https://maily.to/brand/icon.svg" /><br> @maily-to/react</h1>
 
 <p align="center">
   <a href="https://github.com/arikchakma/maily.to/blob/main/license">
@@ -14,7 +14,7 @@
 ## Installation
 
 ```bash
-pnpm add @maily-to/core
+pnpm add @maily-to/react
 
 # for types
 pnpm add -D @tiptap/core
@@ -23,10 +23,10 @@ pnpm add -D @tiptap/core
 ## Usage
 
 ```tsx
-import '@maily-to/core/style.css';
+import '@maily-to/react/style.css';
 
 import { useState } from 'react';
-import { Editor } from '@maily-to/core';
+import { Editor } from '@maily-to/react';
 import type { Editor as TiptapEditor, JSONContent } from '@tiptap/core';
 
 type AppProps = {
@@ -57,7 +57,7 @@ Suppose you have a couple of basic blocks, such as a text block or a heading blo
 
 ```tsx
 // omitting imports
-import { text, heading1 } from '@maily-to/core/blocks';
+import { text, heading1 } from '@maily-to/react/blocks';
 
 <Editor
   blocks={[
@@ -151,7 +151,7 @@ You can pass variables to the editor in two ways:
 
    ```tsx
    // (Omitted repeated imports)
-   import { VariableExtension, getVariableSuggestions } from '@maily-to/core/extensions';
+   import { VariableExtension, getVariableSuggestions } from '@maily-to/react/extensions';
 
    <Editor
      extensions={[
@@ -172,7 +172,7 @@ You can pass variables to the editor in two ways:
 
    ```tsx
    // (Omitted repeated imports)
-   import { VariableExtension, getVariableSuggestions } from '@maily-to/core/extensions';
+   import { VariableExtension, getVariableSuggestions } from '@maily-to/react/extensions';
 
    <Editor
      extensions={[
@@ -216,7 +216,7 @@ Extensions are a way to extend the editor's functionality. You can add custom bl
 
 ```tsx
 // (Omitted repeated imports)
-import { MailyKit, VariableExtension, getVariableSuggestions } from '@maily-to/core/extensions';
+import { MailyKit, VariableExtension, getVariableSuggestions } from '@maily-to/react/extensions';
 
 <Editor
   extensions={[
@@ -263,7 +263,7 @@ To enable image upload, you need to pass the `ImageUploadExtension` extension to
 
 ```tsx
 // (Omitted repeated imports)
-import { ImageUploadExtension } from '@maily-to/core/extensions';
+import { ImageUploadExtension } from '@maily-to/react/extensions';
 
 <Editor
   extensions={[

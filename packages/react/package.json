@@ -1,5 +1,5 @@
 {
-  "name": "@maily-to/core",
+  "name": "@maily-to/react",
   "type": "module",
   "version": "0.3.4",
   "description": "Powerful editor for creating beautiful, pre-designed, mobile-ready emails.",
@@ -131,7 +131,7 @@
   "repository": {
     "type": "git",
     "url": "git+https://github.com/arikchakma/maily.to.git",
-    "directory": "packages/core"
+    "directory": "packages/react"
   },
   "author": "Arik Chakma <arikchangma@gmail.com>",
   "keywords": [
